@@ -10,26 +10,26 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class StudentReader implements ApplicantReader {
+public class StudentReader extends ApplicantReader {
+    public StudentReader(String fileName) {
+        super(fileName);
+    }
+
     @Override
-    public List<Aplicant> read(String fileName) throws FileNotFoundException {
-        Scanner input = new Scanner(new File(fileName));
+    public List<Aplicant> read() throws FileNotFoundException {
+        Scanner input = new Scanner(new File(super.fileName));
         input.useDelimiter(",|\n");
         List<Aplicant> studenti = new ArrayList<Aplicant>();
 
         while (input.hasNext()) {
-            String nume = input.next();
-            String prenume = (input.next()).toString();
-            int varsta = Integer.valueOf(input.nextInt());
-            int punctaj = Integer.valueOf(input.nextInt());
-            int nr = Integer.valueOf(input.nextInt());
-            String[] vect = new String[5];
-            for (int i = 0; i < nr; i++)
-                vect[i] = input.next();
+            Student aplicant = new Student();
+            super.readAplicant(input, aplicant);
             int an_studii = input.nextInt();
             String facultate = (input.next()).toString();
-            Student s = new Student(nume, prenume, varsta, punctaj, nr, vect, facultate, an_studii);
-            studenti.add(s);
+            aplicant.setFacultate(facultate);
+            aplicant.setAn_studii(an_studii);
+
+            studenti.add(aplicant);
         }
         input.close();
         return studenti;
