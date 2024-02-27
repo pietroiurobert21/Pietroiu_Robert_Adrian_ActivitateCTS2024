@@ -37,10 +37,9 @@ public class Student extends Aplicant {
 	}
 	
 	
-	public int finantare() {
+	public void afisareBugetPeZi(int bugetPeZi) {
 		int s=20;
 		System.out.println("Studentul "+getNume()+" "+getPrenume()+" primeste"+s+" Euro/zi in proiect.");
-		return s;
 	}
 	
 }
