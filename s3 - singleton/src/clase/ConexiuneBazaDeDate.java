@@ -15,20 +15,39 @@ public class ConexiuneBazaDeDate {
         this.nrTabele = nrTabele;
     }
 
-    public static synchronized ConexiuneBazaDeDate getInstance(String denumire, String url, int nrTabele) {
+    public static synchronized ConexiuneBazaDeDate getInstance(String denumire, String url, int nrTabele) { // la noi e si threadsafe si lazy initialization
         // synchronized = sa fie thread safe: poate fi apelata doar pe un singur thread
+
+        // 1. threadsafe - cea mai recomandata forma de singleton
+        // 2. eager initialization
+        // 3. lazy initialization
+        // 4.
+        // 5.
+        // 6.
         if (instanta == null) {
             instanta = new ConexiuneBazaDeDate(denumire, url, nrTabele);
         }
         return instanta;
     }
 
-    @Override
-    public String toString() {
-        return "ConexiuneBazaDeDate{" +
-                "denumire='" + denumire + '\'' +
-                ", url='" + url + '\'' +
-                ", nrTabele=" + nrTabele +
-                '}';
+    public void setDenumire(String denumire) {
+        this.denumire = denumire;
     }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public void setNrTabele(int nrTabele) {
+        this.nrTabele = nrTabele;
+    }
+
+//    @Override
+//    public String toString() {
+//        return "ConexiuneBazaDeDate{" +
+//                "denumire='" + denumire + '\'' +
+//                ", url='" + url + '\'' +
+//                ", nrTabele=" + nrTabele +
+//                '}';
+//    }
 }
