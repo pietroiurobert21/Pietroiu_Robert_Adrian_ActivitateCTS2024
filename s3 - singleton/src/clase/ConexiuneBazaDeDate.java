@@ -24,6 +24,7 @@ public class ConexiuneBazaDeDate {
         // 4.
         // 5.
         // 6.
+
         if (instanta == null) {
             instanta = new ConexiuneBazaDeDate(denumire, url, nrTabele);
         }
