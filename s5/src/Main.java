@@ -1,5 +1,5 @@
-import prototype.Prototype;
-import prototype.RetetaCrema;
+import prototype.classes.Prototype;
+import prototype.classes.Reteta;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,7 +13,7 @@ public class Main {
         solutii.put("Solutie1", 200.0);
         solutii.put("Solutie1", 240.0);
         solutii.put("Solutie1", 30.5);
-        Prototype prototype = new RetetaCrema(solutii, "Medicament magic");
+        Prototype prototype = new Reteta(solutii, "Medicament magic");
         Prototype clona1 = prototype.clone();
 
         System.out.println(prototype);

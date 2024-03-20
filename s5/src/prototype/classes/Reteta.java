@@ -1,9 +1,9 @@
-package prototype;
+package prototype.classes;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class RetetaCrema implements Prototype {
+public class Reteta implements Prototype {
     private Map<String, Double> solutii;
     private String numeMedicament;
 
@@ -12,13 +12,13 @@ public class RetetaCrema implements Prototype {
     }
 
     public void setSolutii(Map<String, Double> solutii) {
-        solutii = new HashMap<>();
+        this.solutii = new HashMap<>();
         for(String solutie: solutii.keySet()) {
             this.solutii.put(solutie, solutii.get(solutie));
         }
     }
 
-    public RetetaCrema(Map<String, Double> solutii, String numeMedicament) {
+    public Reteta(Map<String, Double> solutii, String numeMedicament) {
         this.solutii = solutii;
         this.numeMedicament = numeMedicament;
     }
@@ -31,14 +31,14 @@ public class RetetaCrema implements Prototype {
         this.numeMedicament = numeMedicament;
     }
 
-    public RetetaCrema() {
+    public Reteta() {
         this.solutii = null;
         this.numeMedicament = "necunoscut";
     }
 
     @Override
     public Prototype clone() {
-        RetetaCrema reteta = new RetetaCrema();
+        Reteta reteta = new Reteta();
         reteta.setNumeMedicament(this.numeMedicament);
         reteta.setSolutii(this.solutii);
         return reteta;
