@@ -1,4 +1,4 @@
-package builder_v3;
+package builder_v3.classes;
 
 public interface Builder {
     Pacient build();

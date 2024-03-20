@@ -1,4 +1,4 @@
-package builder_v3;
+package builder_v3.classes;
 
 public class Pacient {
     private boolean patRabatabil;
