@@ -3,11 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Training_Test1/D.banca/D.banca.iml" filepath="$PROJECT_DIR$/Training_Test1/D.banca/D.banca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Training_Test1/Extra/Extra.iml" filepath="$PROJECT_DIR$/Training_Test1/Extra/Extra.iml" />
       <module fileurl="file://$PROJECT_DIR$/Pietroiu_Robert_Adrian_ActivitateCTS2024.iml" filepath="$PROJECT_DIR$/Pietroiu_Robert_Adrian_ActivitateCTS2024.iml" />
       <module fileurl="file://$PROJECT_DIR$/Training_Test1/Training_Test1.iml" filepath="$PROJECT_DIR$/Training_Test1/Training_Test1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Training_Test1/D.banca/ex1/ex1.iml" filepath="$PROJECT_DIR$/Training_Test1/D.banca/ex1/ex1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Training_Test1/D.banca/ex3/ex3.iml" filepath="$PROJECT_DIR$/Training_Test1/D.banca/ex3/ex3.iml" />
       <module fileurl="file://$PROJECT_DIR$/Training_Test1/D.banca/ex4/ex4.iml" filepath="$PROJECT_DIR$/Training_Test1/D.banca/ex4/ex4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Training_Test1/D.banca/ex6/ex6.iml" filepath="$PROJECT_DIR$/Training_Test1/D.banca/ex6/ex6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Training_Test1/D.banca/ex7/ex7.iml" filepath="$PROJECT_DIR$/Training_Test1/D.banca/ex7/ex7.iml" />
       <module fileurl="file://$PROJECT_DIR$/module/module.iml" filepath="$PROJECT_DIR$/module/module.iml" />
       <module fileurl="file://$PROJECT_DIR$/s1/s1.iml" filepath="$PROJECT_DIR$/s1/s1.iml" />
       <module fileurl="file://$PROJECT_DIR$/s2/s2.iml" filepath="$PROJECT_DIR$/s2/s2.iml" />
